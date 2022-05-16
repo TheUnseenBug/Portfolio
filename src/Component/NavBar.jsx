@@ -13,7 +13,7 @@ function NavBar() {
         sx={{ bottom: "0", bgcolor: "#edf7fc", borderRadius: "25px" }}
       >
         <Toolbar>
-          <img src={Logo}></img>
+          <img src={Logo} alt="logo"></img>
           <Typography sx={{ color: "text.secondary" }}>
             Dennis Granheimer
             <Button onClick={() => navigate("/")} color="inherit">

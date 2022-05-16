@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
-import { Typography, Grid, Box, Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import Experience from "./Experience";
 import Info from "./Info";
 import Project from "./Project";

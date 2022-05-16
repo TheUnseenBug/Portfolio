@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Paper, Typography } from "@mui/material";
+import { Grid, Box, Paper, Typography, Button } from "@mui/material";
 import Node from "./Images/nodejs-new-white.png";
 import githubLogo from "./Images/GitHub-Mark.png";
 import MongoDBLogo from "./Images/MongoDB_Logo_RGB_Logo_Forest-Green.png";
@@ -33,6 +33,13 @@ const Project = () => {
             >
               <Typography variant="h3">Hello </Typography>
               <Typography variant="h4">Hello this is my project</Typography>
+              <Button
+                onClick={(event) =>
+                  (window.location.href = "https://www.thewebshop.ml/")
+                }
+              >
+                website
+              </Button>
               <img
                 style={{ height: "30px", borderRadius: "25px" }}
                 src={githubLogo}
@@ -44,6 +51,10 @@ const Project = () => {
               <img
                 style={{ height: "30px", borderRadius: "25px" }}
                 src={htmlLogo}
+              ></img>
+              <img
+                style={{ height: "30px", borderRadius: "25px" }}
+                src={Node}
               ></img>
             </Paper>
           </Grid>
@@ -57,7 +68,8 @@ const Project = () => {
           </Grid>
         </Grid>
       </Box>
-      <Grid item>Project</Grid>
+
+      <Grid item></Grid>
       <Grid item>Project</Grid>
       <Grid item>Project</Grid>
       <Grid item>Project</Grid>

@@ -25,9 +25,6 @@ function NavBar() {
             <Button onClick={() => navigate("/Contact")} color="inherit">
               Contact
             </Button>
-            <Button onClick={() => navigate("/Portfolio")} color="inherit">
-              Projects
-            </Button>
           </Typography>
         </Toolbar>
       </AppBar>

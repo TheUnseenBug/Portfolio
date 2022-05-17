@@ -9,7 +9,7 @@ import jsLogo from "./Images/logo-javascript.png";
 import htmlLogo from "./Images/html-1.png";
 import Logo from "./Images/logo2.png";
 
-const Project = () => {
+const Project = ({ name, link, image }) => {
   return (
     <Grid
       container
@@ -32,12 +32,9 @@ const Project = () => {
               sx={{ borderRadius: "25px", padding: "20px" }}
             >
               <Typography variant="h3">Hello </Typography>
-              <Typography variant="h4">Hello this is my project</Typography>
-              <Button
-                onClick={(event) =>
-                  (window.location.href = "https://www.thewebshop.ml/")
-                }
-              >
+              <Typography variant="h4">Hello this is my {name}</Typography>
+              {/* fungerar ej */}
+              <Button onClick={(event) => (window.location.href = { link })}>
                 website
               </Button>
               <img
@@ -60,10 +57,15 @@ const Project = () => {
           </Grid>
           <Grid item xs={2} sx={{ width: "100%" }}>
             <Paper elevation="10" sx={{ borderRadius: "25px", width: "700px" }}>
-              <img
-                src={webShop}
-                style={{ width: "100%", borderRadius: "25px" }}
-              ></img>
+              <a href="https://github.com/TheUnseenBug/Webbshop">
+                <Box>
+                  <img
+                    onClick="https://github.com/TheUnseenBug/Webbshop"
+                    src={image}
+                    style={{ width: "100%", borderRadius: "25px" }}
+                  ></img>
+                </Box>
+              </a>
             </Paper>
           </Grid>
         </Grid>

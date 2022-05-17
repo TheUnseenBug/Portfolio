@@ -4,6 +4,7 @@ import { Box, Paper } from "@mui/material";
 import Experience from "./Experience";
 import Info from "./Info";
 import Project from "./Project";
+import webShop from "./Images/webbshop.png";
 
 function FrontPage() {
   const Item = styled(Paper)(({ theme }) => ({
@@ -22,7 +23,11 @@ function FrontPage() {
       {/* Experience tab  */}
       <Experience />
 
-      <Project />
+      <Project
+        name="webshop"
+        image={webShop}
+        link="https://www.thewebshop.ml/"
+      />
     </Box>
   );
 }

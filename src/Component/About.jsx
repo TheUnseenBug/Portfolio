@@ -25,7 +25,7 @@ function About() {
             src="/Images/Portfolio.jpg"
           ></img>
           <Typography>
-            I'm a junior web developer at the beginning of his career. The last
+            I'm a junior full-stack web developer at the beginning of his career. The last
             half year I have been enrolled in the Techover Academy which is a
             programming bootcamp that has helped me acquire skills such as:
             React, MongoDB, Express, Node, and Redux. Now I am on the hunt for
@@ -40,16 +40,9 @@ function About() {
           <Typography variant="h3">My Story</Typography>
         </Box>
         <Box pb={{ xs: 4, lg: 8 }}>
-          <Typography>I have always liked computers yada yada</Typography>
-        </Box>
+          <Typography>I have always been fascinated by computers and how they work, I got my first personal computer from my dad when I was 6 years old and have been hooked by the amazing possibilities ever since. I started building and tinkering with my pc and eventually my fascination over programming grew more each year. This year I finally took the big leap and decided to learn programming for real and here I am fluent in the MERN stack only 3 months later. </Typography>
       </Box>
-
-      <Box>
-        <Box pb={{ xs: 4, lg: 8 }}>
-          <Typography>Tools I use</Typography>
-        </Box>
-        <Box>Insert image here</Box>
-      </Box>
+    </Box>
     </Box>
   );
 }

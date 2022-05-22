@@ -24,9 +24,11 @@ function FrontPage() {
       <Experience />
 
       <Project
-        name="webshop"
         image={webShop}
         link="https://www.thewebshop.ml/"
+        github="https://github.com/TheUnseenBug/Webbshop"
+        header="Webshop"
+        bread="Hello this is my webshop sadf sadf asdf asdf sadf asdf asdfasddf hdsgh dsdfsgsdfgdsfgsdg"
       />
     </Box>
   );

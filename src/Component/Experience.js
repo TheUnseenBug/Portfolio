@@ -24,15 +24,16 @@ const Experience = () => {
         justifyContent="center"
         alignItems="center"
         spacing={4}
+        
       >
-        <Grid item xs={2}>
-          <Paper elevation={10}>
+        <Grid item xs={2} >
+          <Paper elevation={5}>
             <Item sx={{ height: "100px" }}>
               <img src={Node} style={{ height: "100px" }}></img>
             </Item>
           </Paper>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={2} >
           <Paper elevation={10}>
             <Item>
               <img src={reactLogo} style={{ height: "100px" }}></img>

@@ -7,7 +7,7 @@ function NavBar() {
   let navigate = useNavigate();
 
   return (
-    <Box>
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <AppBar
         position="static"
         sx={{ bottom: "0", bgcolor: "#edf7fc", borderRadius: "25px" }}

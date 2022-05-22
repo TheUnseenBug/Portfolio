@@ -5,6 +5,7 @@ import Experience from "./Experience";
 import Info from "./Info";
 import Project from "./Project";
 import webShop from "./Images/webbshop.png";
+import AiOnic from "./Images/Ai-Onic-Project.png";
 
 function FrontPage() {
   const Item = styled(Paper)(({ theme }) => ({
@@ -28,6 +29,20 @@ function FrontPage() {
         link="https://www.thewebshop.ml/"
         github="https://github.com/TheUnseenBug/Webbshop"
         header="Webshop"
+        bread="Hello this is my webshop sadf sadf asdf asdf sadf asdf asdfasddf hdsgh dsdfsgsdfgdsfgsdg"
+      />
+      <Project
+        image={AiOnic}
+        link="https://www.stripedpandastudios.com/"
+        github="https://github.com/TheUnseenBug/Ai-Onic"
+        header="Ai-Onic"
+        bread="Hello this is my webshop sadf sadf asdf asdf sadf asdf asdfasddf hdsgh dsdfsgsdfgdsfgsdg"
+      />
+      <Project
+        image={webShop}
+        link="https://www.thewebshop.ml/"
+        github="https://github.com/TheUnseenBug/Webbshop"
+        header="Klarna-Checkout"
         bread="Hello this is my webshop sadf sadf asdf asdf sadf asdf asdfasddf hdsgh dsdfsgsdfgdsfgsdg"
       />
     </Box>

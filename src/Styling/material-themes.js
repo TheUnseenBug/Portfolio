@@ -33,7 +33,22 @@ const h4 = {
   lineHeight: "20px",
 };
 
-export const lightTheme = createTheme({
+const h5 = {
+  fontFamily: "Roboto, sans-serif",
+  fontWeight: 400,
+  fontSize: "14px",
+  lineHeight: "20px",
+};
+
+const h6 = {
+  fontFamily: "Roboto, sans-serif",
+  fontWeight: 500,
+  fontSize: "1.25rem",
+  lineHeight: "1.6",
+  letterSpacing: "0.0075em",
+};
+
+export const theme = createTheme({
   palette: {
     primary,
     background: {
@@ -43,7 +58,7 @@ export const lightTheme = createTheme({
 
     text: {
       primary: "#1b1b1b",
-      secondary: "#323b50",
+      secondary: "#40495f",
     },
   },
   typography: {

@@ -1,4 +1,4 @@
-import { Grid, Paper } from "@mui/material";
+import { Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { styled } from "@mui/material/styles";
 import React from "react";
@@ -18,22 +18,39 @@ const Experience = () => {
 
   return (
     <Box sx={{ marginTop: "400px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 18,
+        }}
+      >
+        <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
+          MongoDB
+        </Typography>
+        <Typography variant="h4" sx={{ color: "#40495fad" }}>
+          Git
+        </Typography>
+        <Typography variant="h4" sx={{ color: "#40495fad" }}>
+          HTML
+        </Typography>
+      </Box>
       <Grid
         container
         direction="row"
         justifyContent="center"
         alignItems="center"
         spacing={4}
-        
       >
-        <Grid item xs={2} >
+        <Grid item xs={2}>
           <Paper elevation={5}>
             <Item sx={{ height: "100px" }}>
               <img src={Node} style={{ height: "100px" }}></img>
             </Item>
           </Paper>
         </Grid>
-        <Grid item xs={2} >
+        <Grid item xs={2}>
           <Paper elevation={10}>
             <Item>
               <img src={reactLogo} style={{ height: "100px" }}></img>
@@ -55,6 +72,24 @@ const Experience = () => {
           </Paper>
         </Grid>
       </Grid>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 18,
+        }}
+      >
+        <Typography variant="h5" py={3} sx={{ color: "#40495f" }}>
+          Photoshop
+        </Typography>
+        <Typography variant="h4" sx={{ color: "#40495fad" }}>
+          Illustrator
+        </Typography>
+        <Typography variant="h4" sx={{ color: "#40495fad" }}>
+          Figma
+        </Typography>
+      </Box>
     </Box>
   );
 };

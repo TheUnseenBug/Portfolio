@@ -17,7 +17,19 @@ const Experience = () => {
   }));
 
   return (
-    <Box sx={{ marginTop: "400px" }}>
+    <Box sx={{ marginTop: "100px" }}>
+      <Typography
+        py={2}
+        variant="h3"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#40495f",
+        }}
+      >
+        My Skillset
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -80,7 +92,7 @@ const Experience = () => {
           gap: 18,
         }}
       >
-        <Typography variant="h5" py={3} sx={{ color: "#40495f" }}>
+        <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
           Photoshop
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>

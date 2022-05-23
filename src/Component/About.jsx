@@ -1,9 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import "./About.css";
 
 function About() {
   return (
-    <Box px={{ xs: 3, md: 8, lg: 15, xl: 15 }} sx={{ boxSizing: "border-box" }}>
+    <Box
+      px={{ xs: 3, md: 8, lg: 15, xl: 15 }}
+      sx={{ boxSizing: "border-box" }}
+      className="Box"
+    >
       <Box
         py={{ xs: 4, lg: 8 }}
         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
@@ -24,7 +29,7 @@ function About() {
             style={{ width: "440px", borderRadius: "20px" }}
             src="/Images/Portfolio.jpg"
           ></img>
-          <Typography>
+          <Typography sx={{ fontSize: 20 }}>
             I'm a junior full-stack web developer at the beginning of his
             career. The last half year I have been enrolled in the Techover
             Academy which is a programming bootcamp that has helped me acquire
@@ -41,7 +46,7 @@ function About() {
           <Typography variant="h3">My Story</Typography>
         </Box>
         <Box pb={{ xs: 4, lg: 8 }}>
-          <Typography>
+          <Typography sx={{ fontSize: 20 }}>
             I have always been fascinated by computers and how they work, I got
             my first personal computer from my dad when I was 6 years old and
             have been hooked by the amazing possibilities ever since. I started

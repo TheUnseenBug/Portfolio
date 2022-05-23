@@ -17,7 +17,7 @@ const Experience = () => {
   }));
 
   return (
-    <Box sx={{ marginTop: "100px" }}>
+    <Box sx={{ marginTop: "100px", maxWidth: "100%" }}>
       <Typography
         py={2}
         variant="h3"
@@ -35,37 +35,40 @@ const Experience = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          gap: 18,
+          gap: { lg: "12%", xs: 5 },
         }}
       >
-        <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
-          MongoDB
+        <Typography
+          variant="h4"
+          py={3}
+          sx={{
+            color: "#40495fad",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Git
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          Git
+          CSS
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
           HTML
         </Typography>
       </Box>
-      <Grid
-        container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        spacing={4}
-      >
-        <Grid item xs={2}>
-          <Paper elevation={5}>
-            <Item sx={{ height: "100px" }}>
-              <img src={Node} style={{ height: "100px" }}></img>
-            </Item>
-          </Paper>
-        </Grid>
+      <Grid container direction="row" justifyContent="center" spacing={4}>
         <Grid item xs={2}>
           <Paper elevation={10}>
             <Item>
               <img src={reactLogo} style={{ height: "100px" }}></img>
+            </Item>
+          </Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper elevation={5}>
+            <Item>
+              <img src={Node} style={{ height: "100px", width: 180 }}></img>
             </Item>
           </Paper>
         </Grid>
@@ -76,30 +79,23 @@ const Experience = () => {
             </Item>
           </Paper>
         </Grid>
-        <Grid item xs={2}>
-          <Paper elevation={10}>
-            <Item>
-              <img src={htmlLogo} style={{ height: "100px" }}></img>
-            </Item>
-          </Paper>
-        </Grid>
       </Grid>
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          gap: 18,
+          gap: { lg: "6%", xs: 5 },
         }}
       >
         <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
           Photoshop
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          Illustrator
+          MongoDB
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          Figma
+          Illustrator
         </Typography>
       </Box>
     </Box>

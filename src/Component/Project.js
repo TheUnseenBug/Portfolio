@@ -18,7 +18,7 @@ const Project = ({ link, image, github, bread, header }) => {
       xs={12}
       spacing={2}
       flexDirection="column"
-      sx={{ marginTop: "50px" }}
+      sx={{ marginTop: "50px", maxWidth: "100%" }}
     >
       <Box>
         <Grid
@@ -26,12 +26,19 @@ const Project = ({ link, image, github, bread, header }) => {
           gridTemplateRows="repeat(12,minmax(0,1fr))"
           spacing={2}
           sx={{
-            justifyContent: { md: "flex-start", lg: "center" },
+            justifyContent: { xs: "center", md: "center", lg: "center" },
             display: "flex",
-            maxWidth: "80%",
+            maxWidth: { xs: "45%" },
           }}
         >
-          <Grid item xs={3} sx={{ marginLeft: { md: 5, lg: 0 } }}>
+          <Grid
+            item
+            xs={3}
+            sx={{
+              marginLeft: { md: 5, lg: 0 },
+              minWidth: { xs: "65%", md: "40%" },
+            }}
+          >
             <Paper elevation="6" sx={{ borderRadius: "25px", padding: "10px" }}>
               <Typography variant="h5">{header} </Typography>
               <Typography
@@ -50,7 +57,9 @@ const Project = ({ link, image, github, bread, header }) => {
                 }}
               >
                 <a href={`${link}`} style={{ textDecoration: "none" }}>
-                  <Button variant="contained">website</Button>
+                  <Button variant="contained" size="small">
+                    website
+                  </Button>
                 </a>
                 <a href={`${github}`}>
                   <img
@@ -81,7 +90,10 @@ const Project = ({ link, image, github, bread, header }) => {
           <Grid item xs={2} sx={{ width: "100%" }}>
             <Paper
               elevation="10"
-              sx={{ borderRadius: "25px", width: { md: 650, lg: 800 } }}
+              sx={{
+                borderRadius: "25px",
+                width: { xs: 400, md: 650, lg: 800 },
+              }}
             >
               <Box>
                 <img

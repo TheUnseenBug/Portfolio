@@ -14,7 +14,7 @@ const ScreensRoot = () => {
         <Route path="/" element={<FrontPage />}></Route>
         <Route path="/About" element={<About />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
+        {/* <Route path="/Project" element={<Projects />}></Route> */}
       </Routes>
     </Router>
   );

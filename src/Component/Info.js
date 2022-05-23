@@ -11,14 +11,14 @@ const Info = () => {
       xs={10}
       spacing={2}
       flexDirection="row"
-      justifyContent="space-between"
+      justifyContent="flex-start"
       alignItems="center"
       sx={{
         bgcolor: "background.default",
         marginTop: "100px",
         marginLeft: "5px",
         marginBottom: "50px",
-        width: '100%'
+        width: "100%",
       }}
     >
       <Grid item sx={{ width: "45%" }}>
@@ -29,17 +29,13 @@ const Info = () => {
           <Button variant="contained">Resume</Button>
         </Grid>
         <Grid item sx={{ width: "50%" }}>
-          <a href="https://github.com/TheUnseenBug" style={{textDecoration: 'none'}}>
-          <img style={{ height: "70px" }} src={githubLogo}></img>
+          <a
+            href="https://github.com/TheUnseenBug"
+            style={{ textDecoration: "none" }}
+          >
+            <img style={{ height: "70px" }} src={githubLogo}></img>
           </a>
         </Grid>
-      </Grid>
-      <Grid item sx={{ width: "55%" }}>
-        <img
-          src={Logo}
-          alt="logo"
-          style={{ borderRadius: "35px", border: "1px solid #1b1b1b", width: 200 }}
-        ></img>
       </Grid>
     </Grid>
   );

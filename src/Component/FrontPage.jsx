@@ -10,20 +10,12 @@ import Klarna from "./Images/klarna.webp";
 import Node from "./Images/nodejs-new-white.png";
 import githubLogo from "./Images/GitHub-Mark.webp";
 import MongoDBLogo from "./Images/MongoDB_Logo_RGB_Logo_Forest-Green.png";
-import reactLogo from "./Images/react-2.png";
+import reactLogo from "./Images/react-2.webp";
 import jsLogo from "./Images/logo-javascript.png";
 import htmlLogo from "./Images/html-1.png";
 import Logo from "./Images/logo2.png";
 
 function FrontPage() {
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  }));
-
   return (
     <Box>
       {/* Personal info */}

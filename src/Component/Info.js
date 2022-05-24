@@ -25,7 +25,7 @@ const Info = () => {
         <Typography variant="h4">Hello,</Typography>
         <Typography variant="h3">I'm Dennis Granheimer.</Typography>
         <Typography variant="h4">Full-stack web developer.</Typography>
-        <Grid item sx={{ width: "50%" }}>
+        <Grid pb={1} item sx={{ width: "50%" }}>
           <Button variant="contained">Resume</Button>
         </Grid>
         <Grid item sx={{ width: "50%" }}>

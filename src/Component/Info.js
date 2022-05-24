@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Button } from "@mui/material";
-import githubLogo from "./Images/GitHub-Mark.png";
+import githubLogo from "./Images/GitHub-Mark.webp";
 import Logo from "./Images/logo2.png";
 
 const Info = () => {

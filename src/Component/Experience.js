@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, Paper, Typography, Box } from "@mui/material";
-import Node from "./Images/nodejs-new-white.png";
-import reactLogo from "./Images/react-2.png";
-import jsLogo from "./Images/logo-javascript.png";
+import Node from "./Images/nodejs-new-white.webp";
+import reactLogo from "./Images/react-2.webp";
+import jsLogo from "./Images/logo-javascript.webp";
 
 const Experience = () => {
   return (
@@ -81,7 +81,7 @@ const Experience = () => {
           </Paper>
         </Grid>
       </Grid>
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -98,7 +98,7 @@ const Experience = () => {
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
           Illustrator
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

@@ -19,7 +19,7 @@ function About() {
         <Grid item xs={12} md={6}>
           <img
             style={{ width: "100%", borderRadius: "20px" }}
-            src="/Images/Portfolio.jpg"
+            src="/Images/Portfolio.webp"
           />
         </Grid>
         <Grid

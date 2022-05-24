@@ -32,7 +32,7 @@ function FrontPage() {
       {/* Experience tab  */}
       <Experience />
 
-      <Project
+      {/* <Project
         image={Klarna}
         link="https://techoverklarna.herokuapp.com/"
         github="https://github.com/TheUnseenBug/Webbshop"
@@ -52,7 +52,7 @@ function FrontPage() {
         github="https://github.com/TheUnseenBug/Ai-Onic"
         header="Ai-Onic"
         bread="Developed a website for a indie game following instructions from the studio regarding design and features."
-      />
+      /> */}
     </Box>
   );
 }

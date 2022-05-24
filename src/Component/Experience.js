@@ -58,25 +58,19 @@ const Experience = () => {
         </Typography>
       </Box>
       <Grid container direction="row" justifyContent="center" spacing={4}>
-        <Grid item xs={2}>
-          <Paper elevation={10}>
-            <Item>
-              <img src={reactLogo} style={{ height: "100px" }}></img>
-            </Item>
+        <Grid item xs={6} md={4}>
+          <Paper elevation={10} sx={{ width: "100%" }}>
+            <img src={reactLogo} style={{ width: "100%" }} />
           </Paper>
         </Grid>
-        <Grid item xs={2}>
-          <Paper elevation={5}>
-            <Item>
-              <img src={Node} style={{ height: "100px", width: 180 }}></img>
-            </Item>
+        <Grid item xs={6} md={4}>
+          <Paper elevation={10} sx={{ width: "100%", paddingTop: "100%" }}>
+            <img src={Node} style={{ width: "100%" }} />
           </Paper>
         </Grid>
-        <Grid item xs={2}>
-          <Paper elevation={10}>
-            <Item>
-              <img src={jsLogo} style={{ height: "100px" }}></img>
-            </Item>
+        <Grid item xs={6} md={4}>
+          <Paper elevation={10} sx={{ width: "100%" }}>
+            <img src={jsLogo} style={{ width: "100%" }} />
           </Paper>
         </Grid>
       </Grid>
@@ -88,7 +82,7 @@ const Experience = () => {
           gap: { lg: "6%", xs: 5 },
         }}
       >
-        <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
+        {/* <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
           Photoshop
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
@@ -96,7 +90,7 @@ const Experience = () => {
         </Typography>
         <Typography variant="h4" sx={{ color: "#40495fad" }}>
           Illustrator
-        </Typography>
+        </Typography> */}
       </Box>
     </Box>
   );

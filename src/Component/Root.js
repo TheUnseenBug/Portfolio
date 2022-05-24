@@ -5,17 +5,20 @@ import Contact from "../Component/Contact";
 import FrontPage from "../Component/FrontPage";
 import Projects from "./Projects";
 import NavBar from "./NavBar";
+import { Container } from "@mui/material";
 
 const ScreensRoot = () => {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<FrontPage />}></Route>
-        <Route path="/About" element={<About />}></Route>
-        <Route path="/Contact" element={<Contact />}></Route>
-        {/* <Route path="/Project" element={<Projects />}></Route> */}
-      </Routes>
+      <Container maxWidth={"lg"}>
+        <Routes>
+          <Route path="/" element={<FrontPage />}></Route>
+          <Route path="/About" element={<About />}></Route>
+          <Route path="/Contact" element={<Contact />}></Route>
+          {/* <Route path="/Project" element={<Projects />}></Route> */}
+        </Routes>
+      </Container>
     </Router>
   );
 };

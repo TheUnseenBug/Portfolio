@@ -8,7 +8,12 @@ function NavBar() {
 
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minWidth: "100%",
+      }}
     >
       <AppBar
         position="static"

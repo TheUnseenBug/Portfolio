@@ -3,6 +3,12 @@ import { Grid, Paper, Typography, Box } from "@mui/material";
 import Node from "./Images/nodejs-new-white.webp";
 import reactLogo from "./Images/react-2.webp";
 import jsLogo from "./Images/logo-javascript.webp";
+import Illustator from "./Images/Adobe Illustrator Logo.webp";
+import photoshop from "./Images/Adobe_Photoshop_CC_icon.svg.webp";
+import CSS from "./Images/CSS_logo_PNG2.webp";
+import Git from "./Images/Git-Logo-2Color.webp";
+import Html from "./Images/html-1.webp";
+import MongoDB from "./Images/Logomark_RGB_Default-Slate.webp";
 
 const Experience = () => {
   return (
@@ -19,35 +25,8 @@ const Experience = () => {
       >
         My Skillset
       </Typography>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: { lg: "12%", xs: 5 },
-        }}
-      >
-        <Typography
-          variant="h4"
-          py={3}
-          sx={{
-            color: "#40495fad",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          Git
-        </Typography>
-        <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          CSS
-        </Typography>
-        <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          HTML
-        </Typography>
-      </Box>
       <Grid container direction="row" justifyContent="center" spacing={4}>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={3} md={2}>
           <Paper
             elevation={10}
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
@@ -58,7 +37,7 @@ const Experience = () => {
             />
           </Paper>
         </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={3} md={2}>
           <Paper
             elevation={10}
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
@@ -69,7 +48,7 @@ const Experience = () => {
             />
           </Paper>
         </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={3} md={2}>
           <Paper
             elevation={10}
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
@@ -80,25 +59,73 @@ const Experience = () => {
             />
           </Paper>
         </Grid>
+        <Grid item xs={3} md={2}>
+          <Paper
+            elevation={10}
+            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+          >
+            <img
+              src={Html}
+              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+            />
+          </Paper>
+        </Grid>
+        <Grid item xs={3} md={2}>
+          <Paper
+            elevation={10}
+            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+          >
+            <img
+              src={CSS}
+              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+            />
+          </Paper>
+        </Grid>
+        <Grid item xs={3} md={2}>
+          <Paper
+            elevation={10}
+            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+          >
+            <img
+              src={Git}
+              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+            />
+          </Paper>
+        </Grid>
+        <Grid item xs={3} md={2}>
+          <Paper
+            elevation={10}
+            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+          >
+            <img
+              src={MongoDB}
+              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+            />
+          </Paper>
+        </Grid>
+        <Grid item xs={3} md={2}>
+          <Paper
+            elevation={10}
+            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+          >
+            <img
+              src={Illustator}
+              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+            />
+          </Paper>
+        </Grid>
+        <Grid item xs={3} md={2}>
+          <Paper
+            elevation={10}
+            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
+          >
+            <img
+              src={photoshop}
+              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+            />
+          </Paper>
+        </Grid>
       </Grid>
-      {/* <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: { lg: "6%", xs: 5 },
-        }}
-      >
-        <Typography variant="h4" py={3} sx={{ color: "#40495fad" }}>
-          Photoshop
-        </Typography>
-        <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          MongoDB
-        </Typography>
-        <Typography variant="h4" sx={{ color: "#40495fad" }}>
-          Illustrator
-        </Typography>
-      </Box> */}
     </Box>
   );
 };

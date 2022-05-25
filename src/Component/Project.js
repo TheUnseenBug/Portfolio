@@ -9,55 +9,20 @@ import webShop from "./Images/webbshop.webp";
 import jsLogo from "./Images/logo-javascript.png";
 import htmlLogo from "./Images/html-1.webp";
 import Logo from "./Images/logo2.png";
+import ProjectText from "./ProjectText";
 
-const Project = ({ link, image, github, bread, header }) => {
+const Project = ({ link, image, github, bread, header, logos }) => {
   return (
     <Box>
-      <Grid container item sx={{ marginTop: "50px", maxWidth: "100%" }}>
-        <Grid item p={2} xs={12} md={4} lg={3} sx={{ width: "100%" }}>
-          <Paper elevation="6" sx={{ borderRadius: "25px" }}>
-            <Typography p={2} variant="h5">
-              {header}{" "}
-            </Typography>
-            <Typography
-              variant="h6"
-              px={2}
-              sx={{ fontSize: { xs: 10, md: 14, lg: 20 } }}
-            >
-              {bread}
-            </Typography>
-
-            <Box
-              sx={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "row",
-              }}
-            >
-              <a href={`${link}`} style={{ textDecoration: "none" }}>
-                <Button variant="contained" size="small">
-                  website
-                </Button>
-              </a>
-              <a href={`${github}`}>
-                <img src={githubLogo} style={{ width: "50%" }} />
-              </a>
-            </Box>
-            <Box
-              sx={{
-                width: "100%",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-              }}
-            >
-              <img src={reactLogo} style={{ width: "30%" }} />
-              <img src={htmlLogo} style={{ width: "30%" }} />
-              <img src={Node} style={{ width: "30%" }} />
-            </Box>
-          </Paper>
+      <Grid container item sx={{ marginTop: "50px" }}>
+        <Grid item p={2} xs={12} md={4} lg={3}>
+          <ProjectText
+            link={link}
+            github={github}
+            bread={bread}
+            header={header}
+            logos={logos}
+          />
         </Grid>
         <Grid
           item
@@ -65,14 +30,14 @@ const Project = ({ link, image, github, bread, header }) => {
           md={8}
           sx={{ display: "flex", justifyContent: "center" }}
         >
-          <Paper
-            elevation="10"
-            sx={{
+          <img
+            src={image}
+            style={{
+              width: "100%",
               borderRadius: "25px",
+              filter: "grayscale(0.5)",
             }}
-          >
-            <img src={image} style={{ width: "100%", borderRadius: "25px" }} />
-          </Paper>
+          />
         </Grid>
       </Grid>
     </Box>

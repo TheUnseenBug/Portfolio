@@ -30,6 +30,7 @@ function FrontPage() {
         github="https://github.com/TheUnseenBug/Webbshop"
         header="Klarna-Checkout"
         bread="Created a functioning Klarna Checkout using Klarna playground, Node and Express"
+        logos={[Node, jsLogo]}
       />
       <Project
         image={webShop}
@@ -37,6 +38,7 @@ function FrontPage() {
         github="https://github.com/TheUnseenBug/Webbshop"
         header="Webshop"
         bread="A webshop app where you can add products from a fake api to the cart and checkout via Klarna Checkout. Was created using React, MUI, Redux and my Klarna-Checkout"
+        logos={[reactLogo, htmlLogo, jsLogo]}
       />
       <Project
         image={AiOnic}
@@ -44,6 +46,7 @@ function FrontPage() {
         github="https://github.com/TheUnseenBug/Ai-Onic"
         header="Ai-Onic"
         bread="Developed a website for a indie game following instructions from the studio regarding design and features."
+        logos={[reactLogo, htmlLogo]}
       />
     </Box>
   );

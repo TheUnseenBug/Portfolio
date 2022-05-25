@@ -6,6 +6,7 @@ import FrontPage from "../Component/FrontPage";
 import Projects from "./Projects";
 import NavBar from "./NavBar";
 import { Container } from "@mui/material";
+import Footer from "./Footer";
 
 const ScreensRoot = () => {
   return (
@@ -18,6 +19,7 @@ const ScreensRoot = () => {
           <Route path="/Contact" element={<Contact />}></Route>
           {/* <Route path="/Project" element={<Projects />}></Route> */}
         </Routes>
+        <Footer />
       </Container>
     </Router>
   );

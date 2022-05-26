@@ -33,7 +33,13 @@ const Experience = () => {
           >
             <img
               src={reactLogo}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                display: "inline-block",
+              }}
             />
           </Paper>
         </Grid>
@@ -44,7 +50,13 @@ const Experience = () => {
           >
             <img
               src={Node}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                aspectRatio: "1/1",
+              }}
             />
           </Paper>
         </Grid>
@@ -66,18 +78,13 @@ const Experience = () => {
           >
             <img
               src={Html}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
-            />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={2}>
-          <Paper
-            elevation={10}
-            sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
-          >
-            <img
-              src={CSS}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                aspectRatio: "1/1",
+              }}
             />
           </Paper>
         </Grid>
@@ -88,7 +95,13 @@ const Experience = () => {
           >
             <img
               src={Git}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                aspectRatio: "1/1",
+              }}
             />
           </Paper>
         </Grid>
@@ -99,7 +112,13 @@ const Experience = () => {
           >
             <img
               src={MongoDB}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                aspectRatio: "1/1",
+              }}
             />
           </Paper>
         </Grid>
@@ -110,7 +129,13 @@ const Experience = () => {
           >
             <img
               src={Illustator}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                aspectRatio: "1/1",
+              }}
             />
           </Paper>
         </Grid>
@@ -121,7 +146,13 @@ const Experience = () => {
           >
             <img
               src={photoshop}
-              style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
+              style={{
+                width: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                aspectRatio: "1/1",
+              }}
             />
           </Paper>
         </Grid>

@@ -39,7 +39,6 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
           Github
         </Button>
       </Stack>
-
       <Stack
         direction="row"
         spacing={2}

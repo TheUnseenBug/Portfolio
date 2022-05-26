@@ -8,23 +8,36 @@ const Info = () => {
     <Grid
       container
       item
-      xs={10}
+      xs={12}
       spacing={2}
       flexDirection="row"
       justifyContent="flex-start"
       alignItems="center"
       sx={{
-        bgcolor: "background.default",
+        bgcolor: "white",
         marginTop: "100px",
         marginLeft: "5px",
         marginBottom: "50px",
         width: "100%",
+        justifyContent: { md: "flex-start", xs: "center" },
       }}
     >
       <Grid item sx={{ width: "45%" }}>
-        <Typography variant="h4">Hello,</Typography>
-        <Typography variant="h3">I'm Dennis Granheimer.</Typography>
-        <Typography variant="h4">Full-stack web developer.</Typography>
+        <Typography variant="h4" sx={{ display: { md: "none", xs: "block" } }}>
+          Hello, I'm Dennis Granheimer.
+        </Typography>
+        <Typography variant="h4" sx={{ display: { md: "none", xs: "block" } }}>
+          I'm a full-stack web developer.
+        </Typography>
+        <Typography variant="h4" sx={{ display: { md: "block", xs: "none" } }}>
+          Hello,
+        </Typography>
+        <Typography variant="h3" sx={{ display: { md: "block", xs: "none" } }}>
+          I'm Dennis Granheimer.
+        </Typography>
+        <Typography variant="h4" sx={{ display: { md: "block", xs: "none" } }}>
+          Full-stack web developer.
+        </Typography>
         <Grid pb={1} item sx={{ width: "50%" }}>
           <Button variant="contained">Resume</Button>
         </Grid>

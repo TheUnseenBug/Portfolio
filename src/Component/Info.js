@@ -1,9 +1,9 @@
 import React from "react";
-import { Grid, Typography, Button } from "@mui/material";
-import githubLogo from "./Images/GitHub-Mark.webp";
-import Logo from "./Images/logo2.png";
+import { Grid, Typography, Button, Stack } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Info = () => {
+  const github = "www.github.com/TheUnseenBug";
   return (
     <Grid
       container
@@ -36,16 +36,19 @@ const Info = () => {
         <Typography variant="h4" sx={{ display: { md: "block", xs: "none" } }}>
           Full-stack web developer.
         </Typography>
-        <Grid pb={1} item sx={{ width: "50%" }}>
-          <Button variant="contained">Resume</Button>
-        </Grid>
-        <Grid item sx={{ width: "50%" }}>
-          <a
-            href="https://github.com/TheUnseenBug"
-            style={{ textDecoration: "none" }}
-          >
-            <img style={{ height: "70px" }} src={githubLogo}></img>
-          </a>
+        <Grid item>
+          <Stack direction="row" spacing={1} alignItems="center">
+            <Button variant="contained" mr={3}>
+              Resume
+            </Button>
+            <Button
+              variant="contained"
+              endIcon={<GitHubIcon />}
+              onClick={() => (window.location.href = github)}
+            >
+              Github
+            </Button>
+          </Stack>
         </Grid>
       </Grid>
     </Grid>

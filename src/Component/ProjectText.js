@@ -5,13 +5,23 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const ProjectText = ({ header, bread, link, github, logos }) => {
   return (
     <Paper elevation="6" sx={{ borderRadius: "25px" }}>
-      <Typography p={2} variant="h5">
+      <Typography
+        p={2}
+        variant="h5"
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      >
         {header}{" "}
       </Typography>
       <Typography
         variant="h6"
         px={2}
-        sx={{ fontSize: { xs: 10, md: 14, lg: 20 } }}
+        sx={{
+          fontSize: {
+            xs: 14,
+            md: 14,
+            lg: 20,
+          },
+        }}
       >
         {bread}
       </Typography>

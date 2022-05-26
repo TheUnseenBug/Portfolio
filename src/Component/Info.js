@@ -7,8 +7,6 @@ const Info = () => {
   return (
     <Grid
       container
-      item
-      xs={12}
       spacing={2}
       flexDirection="row"
       justifyContent="flex-start"
@@ -22,7 +20,7 @@ const Info = () => {
         justifyContent: { md: "flex-start", xs: "center" },
       }}
     >
-      <Grid item sx={{ width: "45%" }}>
+      <Grid item xs={12}>
         <Typography variant="h4" sx={{ display: { md: "none", xs: "block" } }}>
           Hello, I'm Dennis Granheimer.
         </Typography>

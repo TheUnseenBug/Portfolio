@@ -38,7 +38,7 @@ const Experience = () => {
                 position: "absolute",
                 top: 0,
                 left: 0,
-                display: "inline-block",
+                aspectRatio: 1,
               }}
             />
           </Paper>

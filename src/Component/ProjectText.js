@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Typography, Box, Grid, Button, Stack } from "@mui/material";
+import { Paper, Typography, Button, Stack } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectText = ({ header, bread, link, github, logos }) => {

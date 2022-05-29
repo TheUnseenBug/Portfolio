@@ -1,6 +1,5 @@
 import React from "react";
-import { styled } from "@mui/material/styles";
-import { Box, Paper } from "@mui/material";
+import { Box } from "@mui/material";
 import Experience from "./Experience";
 import Info from "./Info";
 import Project from "./Project";
@@ -8,12 +7,9 @@ import webShop from "./Images/webbshop.webp";
 import AiOnic from "./Images/Ai-Onic-Project.webp";
 import Klarna from "./Images/klarna.webp";
 import Node from "./Images/nodejs-new-white.png";
-import githubLogo from "./Images/GitHub-Mark.webp";
-import MongoDBLogo from "./Images/MongoDB_Logo_RGB_Logo_Forest-Green.png";
 import reactLogo from "./Images/react-2.webp";
 import jsLogo from "./Images/logo-javascript.png";
 import htmlLogo from "./Images/html-1.png";
-import Logo from "./Images/logo2.png";
 
 function FrontPage() {
   return (

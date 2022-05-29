@@ -38,13 +38,18 @@ const Info = () => {
         </Typography>
         <Grid item>
           <Stack direction="row" spacing={1} alignItems="center">
-            <Button variant="contained" mr={3}>
+            <Button
+              variant="contained"
+              mr={3}
+              sx={{ bgcolor: "#40495F", color: "#AB9150" }}
+            >
               Resume
             </Button>
             <Button
               variant="contained"
               endIcon={<GitHubIcon />}
               onClick={() => (window.location.href = github)}
+              sx={{ bgcolor: "#40495F", color: "#AB9150" }}
             >
               Github
             </Button>

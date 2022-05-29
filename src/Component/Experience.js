@@ -5,7 +5,6 @@ import reactLogo from "./Images/react-2.webp";
 import jsLogo from "./Images/logo-javascript.webp";
 import Illustator from "./Images/Adobe Illustrator Logo.webp";
 import photoshop from "./Images/Adobe_Photoshop_CC_icon.svg.webp";
-import CSS from "./Images/CSS_logo_PNG2.webp";
 import Git from "./Images/Git-Logo-2Color.webp";
 import Html from "./Images/html-1.webp";
 import MongoDB from "./Images/Logomark_RGB_Default-Slate.webp";
@@ -20,7 +19,7 @@ const Experience = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          color: "#40495f",
+          color: "#AB9150",
         }}
       >
         My Skillset

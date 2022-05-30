@@ -14,7 +14,7 @@ const Info = () => {
       alignItems="center"
       pb={2}
       sx={{
-        marginTop: { xs: "30px", md: "60px" },
+        marginTop: { xs: "30px", md: "100px" },
         marginLeft: "5px",
         marginBottom: "50px",
         width: "100%",
@@ -63,6 +63,9 @@ const Info = () => {
         <Grid item>
           <Stack direction="row" spacing={1} alignItems="center">
             <Button
+              onClick={() =>
+                window.open("/Download/CV-Dennis-Granheimer.pdf", "_blank")
+              }
               variant="contained"
               mr={3}
               sx={{ bgcolor: "#40495F", color: "text.primary" }}

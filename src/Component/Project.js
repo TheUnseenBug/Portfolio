@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Box, Paper, Typography, Button, Avatar } from "@mui/material";
 import ProjectText from "./ProjectText";
+import "./Projects.css";
 
 const Project = ({ link, image, github, bread, header, logos }) => {
   return (
@@ -19,16 +20,13 @@ const Project = ({ link, image, github, bread, header, logos }) => {
           item
           xs={12}
           md={9}
-          sx={{ display: "flex", justifyContent: "center" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            position: "relative",
+          }}
         >
-          <img
-            src={image}
-            style={{
-              width: "100%",
-              borderRadius: "25px",
-              filter: "grayscale(0.5)",
-            }}
-          />
+          <img id="project-image" src={image} alt="project image" />
         </Grid>
       </Grid>
     </Box>

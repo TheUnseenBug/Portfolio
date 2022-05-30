@@ -10,8 +10,13 @@ function NavBar() {
       sx={{
         display: { md: "flex", xs: "none" },
         justifyContent: "center",
+        top: 0,
+        left: 0,
+        right: 0,
+        position: "fixed",
         alignItems: "center",
         minWidth: "100%",
+        zIndex: 1,
       }}
     >
       <AppBar position="static" sx={{ bottom: "0", bgcolor: "primary.main" }}>

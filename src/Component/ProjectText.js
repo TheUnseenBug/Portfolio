@@ -62,7 +62,7 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
         alignItems="center"
       >
         {logos.map((logo, i) => (
-          <img src={logo} style={{ width: 30 }} key={i} />
+          <img src={logo} style={{ width: 30 }} key={i} alt="TechStack" />
         ))}
       </Stack>
     </Paper>

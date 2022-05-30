@@ -32,6 +32,7 @@ const Experience = () => {
           >
             <img
               src={reactLogo}
+              alt="react logo"
               style={{
                 width: "100%",
                 position: "absolute",
@@ -48,6 +49,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="node logo"
               src={Node}
               style={{
                 width: "100%",
@@ -65,6 +67,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="javascript logo"
               src={jsLogo}
               style={{ width: "100%", position: "absolute", top: 0, left: 0 }}
             />
@@ -76,6 +79,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="html logo"
               src={Html}
               style={{
                 width: "100%",
@@ -93,6 +97,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="Git logo"
               src={Git}
               style={{
                 width: "100%",
@@ -110,6 +115,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="MongoDB logo"
               src={MongoDB}
               style={{
                 width: "100%",
@@ -127,6 +133,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="Illustrator logo"
               src={Illustator}
               style={{
                 width: "100%",
@@ -144,6 +151,7 @@ const Experience = () => {
             sx={{ width: "100%", paddingTop: "100%", position: "relative" }}
           >
             <img
+              alt="Photoshop logo"
               src={photoshop}
               style={{
                 width: "100%",

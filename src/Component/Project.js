@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Paper, Typography, Button, Avatar } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import ProjectText from "./ProjectText";
 import "./Projects.css";
 
@@ -26,7 +26,7 @@ const Project = ({ link, image, github, bread, header, logos }) => {
             position: "relative",
           }}
         >
-          <img id="project-image" src={image} alt="project image" />
+          <img id="project-image" src={image} alt="project " />
         </Grid>
       </Grid>
     </Box>

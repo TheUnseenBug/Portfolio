@@ -1,12 +1,4 @@
 import { createTheme } from "@mui/material/styles";
-const white = "#ffffff";
-const neonDark = "#00c896";
-const primary = {
-  light: neonDark,
-  main: neonDark,
-  dark: neonDark,
-  contrastText: white,
-};
 
 const h1 = {
   fontFamily: "Roboto, sans-serif",

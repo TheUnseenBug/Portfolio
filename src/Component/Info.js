@@ -3,7 +3,7 @@ import { Grid, Typography, Button, Stack } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Info = () => {
-  const github = "www.github.com/TheUnseenBug";
+  const github = "https://www.github.com/TheUnseenBug";
 
   return (
     <Grid

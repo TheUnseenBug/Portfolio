@@ -23,6 +23,7 @@ function About() {
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <img
+              alt="Portrait"
               style={{ width: "100%", borderRadius: "20px" }}
               src="/Images/Portfolio.webp"
             />

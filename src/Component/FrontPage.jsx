@@ -3,13 +3,13 @@ import { Box } from "@mui/material";
 import Experience from "./Experience";
 import Info from "./Info";
 import Project from "./Project";
-import webShop from "./Images/webbshop.webp";
+import webShop from "./Images/webbshop.png";
 import AiOnic from "./Images/Ai-Onic-Project.webp";
 import Klarna from "./Images/klarna.webp";
-import Node from "./Images/nodejs-new-white.png";
+import Node from "./Images/nodejs-new-white.webp";
 import reactLogo from "./Images/react-2.webp";
-import jsLogo from "./Images/logo-javascript.png";
-import htmlLogo from "./Images/html-1.png";
+import jsLogo from "./Images/logo-javascript.webp";
+import htmlLogo from "./Images/html-1.webp";
 
 function FrontPage() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography, Box, Grow } from "@mui/material";
+import { Grid, Paper, Typography, Box } from "@mui/material";
 import Node from "./Images/nodejs-new-white.webp";
 import reactLogo from "./Images/react-2.webp";
 import jsLogo from "./Images/logo-javascript.webp";

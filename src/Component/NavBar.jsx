@@ -1,6 +1,6 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
   let navigate = useNavigate();
@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <Box
       sx={{
-        display: "flex",
+        display: { md: "flex", xs: "none" },
         justifyContent: "center",
         alignItems: "center",
         minWidth: "100%",
@@ -20,7 +20,7 @@ function NavBar() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            gap: "5rem",
+            gap: "3rem",
           }}
         >
           <Button

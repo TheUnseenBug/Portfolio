@@ -5,7 +5,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <ScreensRoot />
+      <ScreensRoot style={{ backgroundColor: "#40495F" }} />
     </div>
   );
 };

@@ -23,7 +23,7 @@ function FrontPage() {
       <Project
         image={Klarna}
         link="https://techoverklarna.herokuapp.com/"
-        github="https://github.com/TheUnseenBug/Webbshop"
+        github="https://github.com/TheUnseenBug/Klarna-Checkout"
         header="Klarna-Checkout"
         bread="Created a functioning Klarna Checkout using Klarna playground, Node and Express"
         logos={[Node, jsLogo]}

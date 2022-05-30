@@ -5,12 +5,12 @@ function About() {
   return (
     <Box
       px={{ xs: 3, md: 8, lg: 15, xl: 15 }}
-      sx={{ height: { lg: "calc(100vh - 64px)", xs: "100%" } }}
+      sx={{ height: { lg: "calc(100vh - 71px)", xs: "100%" } }}
       className="Box"
     >
       <Typography sx={{ color: "text.primary" }}>
         <Box
-          py={{ xs: 4, lg: 8 }}
+          py={{ xs: 4, md: 12, lg: 12 }}
           sx={{
             display: "flex",
             justifyContent: "center",

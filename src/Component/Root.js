@@ -15,9 +15,8 @@ const ScreensRoot = () => {
           <Routes>
             <Route path="/" element={<FrontPage />}></Route>
             <Route path="/About" element={<About />}></Route>
-            <Route path="/Contact"></Route>
+            <Route path="/Contact" element={<Contact />}></Route>
           </Routes>
-          <Contact />
         </Container>
       </Box>
     </Router>

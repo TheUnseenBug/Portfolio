@@ -12,7 +12,7 @@ const Info = () => {
       justifyContent="flex-start"
       alignItems="center"
       sx={{
-        bgcolor: "white",
+        bgcolor: "#ffffff0f",
         marginTop: "100px",
         marginLeft: "5px",
         marginBottom: "50px",
@@ -21,20 +21,37 @@ const Info = () => {
       }}
     >
       <Grid item xs={12}>
-        <Typography variant="h4" sx={{ display: { md: "none", xs: "block" } }}>
-          Hello, I'm Dennis Granheimer.
-        </Typography>
-        <Typography variant="h4" sx={{ display: { md: "none", xs: "block" } }}>
-          I'm a full-stack web developer.
-        </Typography>
-        <Typography variant="h4" sx={{ display: { md: "block", xs: "none" } }}>
-          Hello,
-        </Typography>
-        <Typography variant="h3" sx={{ display: { md: "block", xs: "none" } }}>
-          I'm Dennis Granheimer.
-        </Typography>
-        <Typography variant="h4" sx={{ display: { md: "block", xs: "none" } }}>
-          Full-stack web developer.
+        <Typography sx={{ color: "#ffffff" }}>
+          <Typography
+            variant="h4"
+            sx={{ display: { md: "none", xs: "block" } }}
+          >
+            Hello, I'm Dennis Granheimer.
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{ display: { md: "none", xs: "block" } }}
+          >
+            I'm a full-stack web developer.
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{ display: { md: "block", xs: "none" } }}
+          >
+            Hello,
+          </Typography>
+          <Typography
+            variant="h3"
+            sx={{ display: { md: "block", xs: "none" } }}
+          >
+            I'm Dennis Granheimer.
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{ display: { md: "block", xs: "none" } }}
+          >
+            Full-stack web developer.
+          </Typography>
         </Typography>
         <Grid item>
           <Stack direction="row" spacing={1} alignItems="center">

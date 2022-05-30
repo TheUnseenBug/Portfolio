@@ -5,14 +5,16 @@ function About() {
   return (
     <Box
       px={{ xs: 3, md: 8, lg: 15, xl: 15 }}
-      sx={{ boxSizing: "border-box" }}
+      sx={{ height: { lg: "calc(100vh - 64px)", xs: "100%" } }}
       className="Box"
     >
       <Box
         py={{ xs: 4, lg: 8 }}
         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
-        <Typography variant="h2">Hello I'm Dennis Granheimer</Typography>
+        <Typography variant="h2" sx={{ color: "#AB9150" }}>
+          Hello I'm Dennis Granheimer
+        </Typography>
       </Box>
 
       <Grid container spacing={2}>
@@ -32,7 +34,7 @@ function About() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ fontSize: 20 }}>
+          <Typography sx={{ fontSize: 20, color: "#AB9150" }}>
             I'm a junior full-stack web developer at the beginning of his
             career. The last half year I have been enrolled in the Techover
             Academy which is a programming bootcamp that has helped me acquire
@@ -44,10 +46,12 @@ function About() {
         </Grid>
         <Grid item xs={12}>
           <Box pb={{ xs: 2, lg: 4 }}>
-            <Typography variant="h3">My Story</Typography>
+            <Typography variant="h3" sx={{ color: "#AB9150" }}>
+              My Story
+            </Typography>
           </Box>
           <Box pb={{ xs: 4, lg: 8 }}>
-            <Typography sx={{ fontSize: 20 }}>
+            <Typography sx={{ fontSize: 20, color: "#AB9150" }}>
               I have always been fascinated by computers and how they work, I
               got my first personal computer from my dad when I was 6 years old
               and have been hooked by the amazing possibilities ever since. I

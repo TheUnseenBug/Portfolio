@@ -24,21 +24,21 @@ function NavBar() {
           }}
         >
           <Button
-            sx={{ color: "#5E553F" }}
+            sx={{ color: "#ffffff" }}
             onClick={() => navigate("/")}
             color="inherit"
           >
             Home
           </Button>
           <Button
-            sx={{ color: "#5E553F" }}
+            sx={{ color: "#ffffff" }}
             onClick={() => navigate("/About")}
             color="inherit"
           >
             About
           </Button>
           <Button
-            sx={{ color: "#5E553F" }}
+            sx={{ color: "#ffffff" }}
             onClick={() => navigate("/Contact")}
             color="inherit"
           >

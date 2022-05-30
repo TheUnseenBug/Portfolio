@@ -21,7 +21,7 @@ function Contact() {
   return (
     <Box
       sx={{
-        height: "calc(100vh - 77px)",
+        height: "calc(100vh - 64px)",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
@@ -36,7 +36,10 @@ function Contact() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography variant="h1" sx={{ fontSize: { xs: 40, md: 60 } }}>
+          <Typography
+            variant="h1"
+            sx={{ fontSize: { xs: 40, md: 60 }, color: "#AB9150" }}
+          >
             Looking forward to hearing from you!
           </Typography>
         </Grid>

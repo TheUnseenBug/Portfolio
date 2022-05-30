@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, Paper, Typography, Button, Avatar } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import ProjectText from "./ProjectText";
 import "./Projects.css";
 

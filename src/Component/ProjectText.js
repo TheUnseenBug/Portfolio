@@ -8,7 +8,12 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
       <Typography
         p={2}
         variant="h5"
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "text.secondary",
+        }}
       >
         {header}{" "}
       </Typography>
@@ -21,6 +26,7 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
             md: 14,
             lg: 20,
           },
+          color: "text.secondary",
         }}
       >
         {bread}

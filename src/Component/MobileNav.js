@@ -22,6 +22,9 @@ export default function MobileNav() {
       }}
     >
       <BottomNavigation
+        sx={{
+          bgcolor: "primary.main",
+        }}
         showLabels
         value={value}
         onChange={(event, newValue) => {
@@ -29,16 +32,34 @@ export default function MobileNav() {
         }}
       >
         <BottomNavigationAction
+          selected={true}
+          sx={{
+            "&.Mui-selected": {
+              color: "#ffffff",
+            },
+          }}
           onClick={() => navigate("/")}
           label="Home"
           icon={<HomeIcon />}
         />
         <BottomNavigationAction
+          selected={true}
+          sx={{
+            "&.Mui-selected": {
+              color: "#ffffff",
+            },
+          }}
           onClick={() => navigate("/About")}
           label="About"
           icon={<PeopleIcon />}
         />
         <BottomNavigationAction
+          selected={true}
+          sx={{
+            "&.Mui-selected": {
+              color: "#ffffff",
+            },
+          }}
           onClick={() => navigate("/Contact")}
           label="Contact"
           icon={<ContactsIcon />}

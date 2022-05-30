@@ -14,8 +14,7 @@ const Info = () => {
       alignItems="center"
       pb={2}
       sx={{
-        bgcolor: "#ffffff0f",
-        marginTop: "100px",
+        marginTop: { xs: "30px", md: "60px" },
         marginLeft: "5px",
         marginBottom: "50px",
         width: "100%",
@@ -29,7 +28,7 @@ const Info = () => {
       }}
     >
       <Grid item xs={12}>
-        <Typography sx={{ color: "#ffffff" }}>
+        <Typography sx={{ color: "text.primary" }}>
           <Typography
             variant="h4"
             sx={{ display: { md: "none", xs: "block" } }}
@@ -66,7 +65,7 @@ const Info = () => {
             <Button
               variant="contained"
               mr={3}
-              sx={{ bgcolor: "#40495F", color: "#AB9150" }}
+              sx={{ bgcolor: "#40495F", color: "text.primary" }}
             >
               Resume
             </Button>
@@ -74,7 +73,7 @@ const Info = () => {
               variant="contained"
               endIcon={<GitHubIcon />}
               onClick={() => (window.location.href = github)}
-              sx={{ bgcolor: "#40495F", color: "#AB9150" }}
+              sx={{ bgcolor: "#40495F", color: "text.primary" }}
             >
               Github
             </Button>

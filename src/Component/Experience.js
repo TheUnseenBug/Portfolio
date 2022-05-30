@@ -19,7 +19,7 @@ const Experience = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          color: "#ffffff",
+          color: "text.primary",
         }}
       >
         My Skillset

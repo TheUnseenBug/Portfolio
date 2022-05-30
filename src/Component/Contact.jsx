@@ -38,7 +38,7 @@ function Contact() {
         <Grid item xs={12} md={6}>
           <Typography
             variant="h1"
-            sx={{ fontSize: { xs: 40, md: 60 }, color: "#AB9150" }}
+            sx={{ fontSize: { xs: 40, md: 60 }, color: "text.primary" }}
           >
             Looking forward to hearing from you!
           </Typography>
@@ -48,6 +48,7 @@ function Contact() {
             <List subheader={<ListSubheader>Contact info:</ListSubheader>}>
               <ListItem>
                 <ListItemButton
+                  sx={{ color: "text.secondary" }}
                   onClick={() => (window.location.href = `tel:${phone}`)}
                 >
                   <ListItemIcon>
@@ -58,6 +59,7 @@ function Contact() {
               </ListItem>
               <ListItem>
                 <ListItemButton
+                  sx={{ color: "text.secondary" }}
                   onClick={() => (window.location.href = `mailto:${email}`)}
                 >
                   <ListItemIcon>

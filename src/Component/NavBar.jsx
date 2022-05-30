@@ -14,7 +14,7 @@ function NavBar() {
         minWidth: "100%",
       }}
     >
-      <AppBar position="static" sx={{ bottom: "0", bgcolor: "#848FAB" }}>
+      <AppBar position="static" sx={{ bottom: "0", bgcolor: "primary.main" }}>
         <Toolbar
           sx={{
             display: "flex",

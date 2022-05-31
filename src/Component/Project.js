@@ -26,7 +26,7 @@ const Project = ({ link, image, github, bread, header, logos }) => {
             position: "relative",
           }}
         >
-          <img id="project-image" src={image} alt="project " />
+          <img className="project-image" src={image} alt="project " />
         </Grid>
       </Grid>
     </Box>

@@ -12,7 +12,7 @@ const Info = () => {
       flexDirection="row"
       justifyContent="flex-start"
       alignItems="center"
-      pb={2}
+      p={3}
       sx={{
         marginTop: { xs: "30px", md: "100px" },
         marginLeft: "5px",
@@ -42,22 +42,18 @@ const Info = () => {
             I'm a full-stack web developer.
           </Typography>
           <Typography
-            variant="h4"
-            sx={{ display: { md: "block", xs: "none" } }}
+            variant="body1"
+            sx={{ display: { md: "block", xs: "none" }, fontSize: "18px" }}
           >
             Hello,
           </Typography>
           <Typography
-            variant="h3"
+            variant="h2"
+            my={4}
             sx={{ display: { md: "block", xs: "none" } }}
           >
             I'm Dennis Granheimer.
-          </Typography>
-          <Typography
-            variant="h4"
-            sx={{ display: { md: "block", xs: "none" } }}
-          >
-            Full-stack web developer.
+            <div>Full-stack web developer.</div>
           </Typography>
         </Typography>
         <Grid item>

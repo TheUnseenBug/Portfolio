@@ -1,12 +1,12 @@
-#project-image ::before {
+.project-image::before {
   content: "";
   filter: blur(10px);
 }
 
-#project-image {
+.project-image {
   width: 100%;
   border-radius: 25px;
   filter: grayscale(50%);
 }
-#project-image after {
+.project-image::after {
 }

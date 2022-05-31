@@ -12,7 +12,7 @@ const h2 = {
   fontWeight: 300,
   fontSize: "60px",
   letterSpacing: "-0.5px",
-  lineHeight: "50px",
+  lineHeight: "65px",
 };
 const h3 = {
   fontFamily: "Roboto, sans-serif",

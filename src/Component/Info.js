@@ -12,10 +12,10 @@ const Info = () => {
       flexDirection="row"
       justifyContent="flex-start"
       alignItems="center"
-      pb={2}
+      p={3}
       sx={{
         marginTop: { xs: "30px", md: "100px" },
-        marginLeft: "5px",
+        marginLeft: "auto",
         marginBottom: "50px",
         width: "100%",
         justifyContent: { md: "flex-start", xs: "center" },
@@ -30,34 +30,48 @@ const Info = () => {
       <Grid item xs={12}>
         <Typography sx={{ color: "text.primary" }}>
           <Typography
-            variant="h4"
-            sx={{ display: { md: "none", xs: "block" } }}
-          >
-            Hello, I'm Dennis Granheimer.
-          </Typography>
-          <Typography
-            variant="h4"
-            sx={{ display: { md: "none", xs: "block" } }}
-          >
-            I'm a full-stack web developer.
-          </Typography>
-          <Typography
-            variant="h4"
-            sx={{ display: { md: "block", xs: "none" } }}
+            variant="body1"
+            sx={{
+              display: { md: "none", xs: "block" },
+              fontSize: 16,
+            }}
           >
             Hello,
           </Typography>
           <Typography
-            variant="h3"
-            sx={{ display: { md: "block", xs: "none" } }}
+            variant="h5"
+            sx={{
+              display: { md: "none", xs: "block" },
+              fontSize: 26,
+              lineHeight: "30px",
+            }}
           >
             I'm Dennis Granheimer.
           </Typography>
           <Typography
             variant="h4"
+            mb={2}
+            sx={{
+              display: { md: "none", xs: "block" },
+              fontSize: 26,
+              lineHeight: "30px",
+            }}
+          >
+            I'm a full-stack web developer.
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ display: { md: "block", xs: "none" }, fontSize: "22px" }}
+          >
+            Hello,
+          </Typography>
+          <Typography
+            variant="h2"
+            my={4}
             sx={{ display: { md: "block", xs: "none" } }}
           >
-            Full-stack web developer.
+            I'm Dennis Granheimer.
+            <div>Full-stack web developer.</div>
           </Typography>
         </Typography>
         <Grid item>

@@ -20,8 +20,8 @@ const Experience = () => {
   const style = {
     width: "calc(100% - 20px)",
     position: "absolute",
-    top: "10%",
-    left: "10px",
+    top: "4%",
+    left: "4%",
   };
   return (
     <Box sx={{ marginTop: "100px", maxWidth: "100%" }}>
@@ -40,7 +40,16 @@ const Experience = () => {
       <Grid container direction="row" justifyContent="center" spacing={4}>
         <Grid item xs={3} md={3}>
           <Paper elevation={10} sx={paperStyle}>
-            <img src={reactLogo} alt="react logo" style={style} />
+            <img
+              src={reactLogo}
+              alt="react logo"
+              style={{
+                width: "calc(100% - 20px)",
+                position: "absolute",
+                top: "9%",
+                left: "10px",
+              }}
+            />
           </Paper>
         </Grid>
         <Grid item xs={3} md={3}>
@@ -59,21 +68,21 @@ const Experience = () => {
         </Grid>
         <Grid item xs={3} md={3}>
           <Paper elevation={10} sx={paperStyle}>
-            <img
-              alt="javascript logo"
-              src={jsLogo}
-              style={{
-                top: "10px",
-                left: "10px",
-                width: "calc(100% - 20px)",
-                position: "absolute",
-              }}
-            />
+            <img alt="javascript logo" src={jsLogo} style={style} />
           </Paper>
         </Grid>
         <Grid item xs={3} md={3}>
           <Paper elevation={10} sx={paperStyle}>
-            <img alt="html logo" src={html1} style={style} />
+            <img
+              alt="html logo"
+              src={html1}
+              style={{
+                top: "4%",
+                left: "4%",
+                width: "calc(100% - 20px)",
+                position: "absolute",
+              }}
+            />
           </Paper>
         </Grid>
         <Grid item xs={3} md={3}>

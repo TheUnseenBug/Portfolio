@@ -7,7 +7,7 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
     <Paper elevation="6" sx={{ borderRadius: "25px" }}>
       <Typography
         p={2}
-        variant="h5"
+        variant="h4"
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -15,24 +15,28 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
           color: "text.secondary",
         }}
       >
-        {header}{" "}
+        {header}
       </Typography>
       <Typography
-        variant="h6"
+        variant="body1"
         px={2}
+        pb={2}
         sx={{
           fontSize: {
             xs: 14,
             md: 14,
-            lg: 20,
+            lg: 18,
           },
           color: "text.secondary",
+          lineHeight: { lg: "20px", xs: "14px" },
         }}
       >
         {bread}
       </Typography>
 
       <Stack
+        mt={2}
+        mb={2}
         direction="row"
         spacing={2}
         justifyContent="center"

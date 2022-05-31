@@ -15,7 +15,7 @@ const Info = () => {
       p={3}
       sx={{
         marginTop: { xs: "30px", md: "100px" },
-        marginLeft: "5px",
+        marginLeft: "auto",
         marginBottom: "50px",
         width: "100%",
         justifyContent: { md: "flex-start", xs: "center" },
@@ -30,20 +30,38 @@ const Info = () => {
       <Grid item xs={12}>
         <Typography sx={{ color: "text.primary" }}>
           <Typography
-            variant="h4"
-            sx={{ display: { md: "none", xs: "block" } }}
+            variant="body1"
+            sx={{
+              display: { md: "none", xs: "block" },
+              fontSize: 16,
+            }}
           >
-            Hello, I'm Dennis Granheimer.
+            Hello,
+          </Typography>
+          <Typography
+            variant="h5"
+            sx={{
+              display: { md: "none", xs: "block" },
+              fontSize: 26,
+              lineHeight: "30px",
+            }}
+          >
+            I'm Dennis Granheimer.
           </Typography>
           <Typography
             variant="h4"
-            sx={{ display: { md: "none", xs: "block" } }}
+            mb={2}
+            sx={{
+              display: { md: "none", xs: "block" },
+              fontSize: 26,
+              lineHeight: "30px",
+            }}
           >
             I'm a full-stack web developer.
           </Typography>
           <Typography
             variant="body1"
-            sx={{ display: { md: "block", xs: "none" }, fontSize: "18px" }}
+            sx={{ display: { md: "block", xs: "none" }, fontSize: "22px" }}
           >
             Hello,
           </Typography>

@@ -26,7 +26,15 @@ const Project = ({ link, image, github, bread, header, logos }) => {
             position: "relative",
           }}
         >
-          <img className="project-image" src={image} alt="project " />
+          <img
+            style={{
+              width: "100%",
+              borderRadius: "25px",
+              filter: "grayscale(40%)",
+            }}
+            src={image}
+            alt="project "
+          />
         </Grid>
       </Grid>
     </Box>

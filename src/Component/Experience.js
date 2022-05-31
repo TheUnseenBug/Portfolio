@@ -7,7 +7,6 @@ import Illustator from "./Images/Adobe Illustrator Logo.webp";
 import photoshop from "./Images/Adobe_Photoshop_CC_icon.svg.webp";
 import Git from "./Images/Git-Logo-2Color.webp";
 import html1 from "./Images/html-1.svg";
-import html from "./Images/html-1.webp";
 import MongoDB from "./Images/Logomark_RGB_Default-Slate.webp";
 
 const Experience = () => {
@@ -26,7 +25,7 @@ const Experience = () => {
   return (
     <Box sx={{ marginTop: "100px", maxWidth: "100%" }}>
       <Typography
-        py={2}
+        py={4}
         variant="h3"
         sx={{
           display: "flex",
@@ -92,7 +91,16 @@ const Experience = () => {
         </Grid>
         <Grid item xs={3} md={3}>
           <Paper elevation={10} sx={paperStyle}>
-            <img alt="MongoDB logo" src={MongoDB} style={style} />
+            <img
+              alt="MongoDB logo"
+              src={MongoDB}
+              style={{
+                top: "0%",
+                left: "4%",
+                width: "calc(100% - 20px)",
+                position: "absolute",
+              }}
+            />
           </Paper>
         </Grid>
         <Grid item xs={3} md={3}>

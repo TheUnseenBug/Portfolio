@@ -29,9 +29,9 @@ function About() {
             />
           </Grid>
           <Grid
+            item
             xs={12}
             md={6}
-            item
             sx={{
               display: "flex",
               justifyContent: "flex-start",
@@ -49,7 +49,7 @@ function About() {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Box pb={{ xs: 2, lg: 4 }}>
+            <Box pb={{ xs: 2, lg: 6 }}>
               <Typography variant="h3">My Story</Typography>
             </Box>
             <Box pb={{ xs: 4, lg: 8 }}>

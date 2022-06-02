@@ -10,7 +10,7 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
         variant="h4"
         sx={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           alignItems: "center",
           color: "text.secondary",
         }}
@@ -29,6 +29,7 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
           },
           color: "text.secondary",
           lineHeight: { lg: "20px", xs: "14px" },
+          textAlign: "left",
         }}
       >
         {bread}

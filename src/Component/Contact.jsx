@@ -18,6 +18,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 function Contact() {
   const email = "1dennis.granheimer@gmail.com";
   const phone = "0708780589";
+
   return (
     <Box
       sx={{

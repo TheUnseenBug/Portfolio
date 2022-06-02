@@ -10,6 +10,16 @@ import html1 from "./Images/html-1.svg";
 import MongoDB from "./Images/Logomark_RGB_Default-Slate.webp";
 
 const Experience = () => {
+  const logos = [
+    Node,
+    reactLogo,
+    jsLogo,
+    Illustator,
+    photoshop,
+    Git,
+    html1,
+    MongoDB,
+  ];
   const paperStyle = {
     width: "100%",
     paddingTop: "100%",
@@ -17,10 +27,13 @@ const Experience = () => {
   };
 
   const style = {
-    width: "calc(100% - 20px)",
     position: "absolute",
-    top: "4%",
-    left: "4%",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    transform: "scale(0.7)",
+    transformOrigin: "center",
   };
   return (
     <Box sx={{ marginTop: "100px", maxWidth: "100%" }}>
@@ -37,82 +50,15 @@ const Experience = () => {
         My Skillset
       </Typography>
       <Grid container direction="row" justifyContent="center" spacing={4}>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img
-              src={reactLogo}
-              alt="react logo"
-              style={{
-                width: "calc(100% - 20px)",
-                position: "absolute",
-                top: "9%",
-                left: "10px",
-              }}
-            />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img
-              alt="node logo"
-              src={Node}
-              style={{
-                width: "calc(100% - 20px)",
-                position: "absolute",
-                top: "25%",
-                left: "10px",
-              }}
-            />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img alt="javascript logo" src={jsLogo} style={style} />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img
-              alt="html logo"
-              src={html1}
-              style={{
-                top: "4%",
-                left: "4%",
-                width: "calc(100% - 20px)",
-                position: "absolute",
-              }}
-            />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img alt="Git logo" src={Git} style={style} />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img
-              alt="MongoDB logo"
-              src={MongoDB}
-              style={{
-                top: "0%",
-                left: "4%",
-                width: "calc(100% - 20px)",
-                position: "absolute",
-              }}
-            />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img alt="Illustrator logo" src={Illustator} style={style} />
-          </Paper>
-        </Grid>
-        <Grid item xs={3} md={3}>
-          <Paper elevation={10} sx={paperStyle}>
-            <img alt="Photoshop logo" src={photoshop} style={style} />
-          </Paper>
-        </Grid>
+        {logos.map((logo) => {
+          return (
+            <Grid item xs={6} md={3}>
+              <Paper elevation={10} sx={paperStyle}>
+                <img src={logo} alt="logo" style={style} />
+              </Paper>
+            </Grid>
+          );
+        })}
       </Grid>
     </Box>
   );

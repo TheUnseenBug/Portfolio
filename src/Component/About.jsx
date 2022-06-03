@@ -21,7 +21,7 @@ function About() {
         </Box>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5}>
             <img
               alt="Portrait"
               style={{
@@ -35,21 +35,16 @@ function About() {
           <Grid
             item
             xs={12}
-            md={6}
+            md={7}
             sx={{
               display: "flex",
               justifyContent: "flex-start",
               alignItems: "center",
             }}
           >
-            <Typography sx={{ fontSize: 20 }}>
-              I'm a junior full-stack web developer at the beginning of his
-              career. The last half year I have been enrolled in the Techover
-              Academy which is a programming bootcamp that has helped me acquire
-              skills such as: React, MongoDB, Express, Node, and Redux. Now I am
-              on the hunt for an adventure in the tech industry and hopefully my
-              problem solving capabilities can improve for my future workplace
-              endeavours.
+            <Typography variant="h4">
+              I am a junior full-stack developer. My current stack is React,
+              MongoDB, Express, Node, Redux, CSS and HTML5.
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -63,15 +58,11 @@ function About() {
                 old and have been hooked by the amazing possibilities ever
                 since. I started building and tinkering with my pc and
                 eventually my fascination over programming grew more each year.
-                This year I finally took the big leap and decided to learn
-                programming for real and here I am fluent in the MERN stack only
-                3 months later.
-                <div style={{ marginTop: "20px" }}>
-                  Academy which is a programming bootcamp that has helped me
-                  acquire skills such as: React, MongoDB, Express, Node, and
-                  Redux. Now I am on the hunt for an adventure in the tech
-                  industry and hopefully my problem solving capabilities can
-                  improve for my future workplace endeavours.
+                <div style={{ marginTop: "40px" }}>
+                  This year I finally took the big leap and decided to learn
+                  programming for real and enrolled in Techover-Academy which is
+                  a bootcamp that teaches the MERN stack. Now three months
+                  later, I am on the hunt for an adventure in the tech industry.
                 </div>
               </Typography>
             </Box>
@@ -83,3 +74,10 @@ function About() {
 }
 
 export default About;
+// I'm a junior full-stack web developer at
+// the beginning of his career. The last half year I have been
+// enrolled in the Techover Academy which is a programming bootcamp
+// that has helped me acquire skills such as: React, MongoDB,
+// Express, Node, and Redux. Now I am on the hunt for an adventure in
+// the tech industry and hopefully my problem solving capabilities
+// can improve for my future workplace endeavours.

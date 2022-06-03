@@ -43,8 +43,8 @@ function About() {
             }}
           >
             <Typography variant="h4">
-              I am a junior full-stack developer. My current stack is React,
-              MongoDB, Express, Node, Redux, CSS and HTML5.
+              I am a junior full-stack developer. My current stack is MongoDB,
+              React, Express, Node.
             </Typography>
           </Grid>
           <Grid item xs={12}>

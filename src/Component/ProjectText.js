@@ -1,11 +1,14 @@
 import React from "react";
-import { Paper, Typography, Button, Stack, Chip } from "@mui/material";
+import { Paper, Typography, Button, Stack, Chip, Box } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectText = ({ header, bread, link, github, stack }) => {
   const chipStyle = {
     bgcolor: "primary.main",
-    margin: "0px 5px 10px 5px",
+    margin: {
+      xs: "0px 5px 16px 5px",
+      m: "0px 5px 16px 5px",
+    },
     color: "#ffffff",
   };
   return (
@@ -64,10 +67,11 @@ const ProjectText = ({ header, bread, link, github, stack }) => {
           Github
         </Button>
       </Stack>
-
-      {stack.map((item, index) => (
-        <Chip sx={chipStyle} label={item} key={index}></Chip>
-      ))}
+      <Box justifyContent="center" display="flex">
+        {stack.map((item, index) => (
+          <Chip sx={chipStyle} label={item} key={index}></Chip>
+        ))}
+      </Box>
     </Paper>
   );
 };

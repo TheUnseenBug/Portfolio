@@ -22,7 +22,7 @@ function FrontPage() {
         github="https://github.com/TheUnseenBug/Klarna-Checkout"
         header="Klarna-Checkout"
         bread="Created a functioning Klarna Checkout using Klarna playground, Node and Express"
-        stack={["Node", "Express", "KlarnaPlayground"]}
+        stack={["Node", "KlarnaPlayground", "Express"]}
       />
       <Project
         image={webShop}

@@ -24,7 +24,11 @@ function About() {
           <Grid item xs={12} md={6}>
             <img
               alt="Portrait"
-              style={{ width: "100%", borderRadius: "20px" }}
+              style={{
+                width: "100%",
+                borderRadius: "20px",
+                marginBottom: "96px",
+              }}
               src="/Images/Portfolio.webp"
             />
           </Grid>
@@ -61,7 +65,14 @@ function About() {
                 eventually my fascination over programming grew more each year.
                 This year I finally took the big leap and decided to learn
                 programming for real and here I am fluent in the MERN stack only
-                3 months later.{" "}
+                3 months later.
+                <div style={{ marginTop: "20px" }}>
+                  Academy which is a programming bootcamp that has helped me
+                  acquire skills such as: React, MongoDB, Express, Node, and
+                  Redux. Now I am on the hunt for an adventure in the tech
+                  industry and hopefully my problem solving capabilities can
+                  improve for my future workplace endeavours.
+                </div>
               </Typography>
             </Box>
           </Grid>

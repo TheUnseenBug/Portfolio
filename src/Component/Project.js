@@ -7,7 +7,7 @@ const Project = ({ link, image, github, bread, header, logos }) => {
   return (
     <Box>
       <Grid container item sx={{ marginTop: "50px" }}>
-        <Grid item p={2} xs={12} md={3} lg={3}>
+        <Grid item p={2} xs={12} md={3} lg={4}>
           <ProjectText
             link={link}
             github={github}
@@ -19,7 +19,7 @@ const Project = ({ link, image, github, bread, header, logos }) => {
         <Grid
           item
           xs={12}
-          md={9}
+          md={7}
           sx={{
             display: "flex",
             justifyContent: "center",

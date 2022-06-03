@@ -26,7 +26,7 @@ function About() {
               alt="Portrait"
               style={{
                 width: "100%",
-                borderRadius: "20px",
+                borderRadius: "10px",
                 marginBottom: "96px",
               }}
               src="/Images/Portfolio.webp"
@@ -74,10 +74,3 @@ function About() {
 }
 
 export default About;
-// I'm a junior full-stack web developer at
-// the beginning of his career. The last half year I have been
-// enrolled in the Techover Academy which is a programming bootcamp
-// that has helped me acquire skills such as: React, MongoDB,
-// Express, Node, and Redux. Now I am on the hunt for an adventure in
-// the tech industry and hopefully my problem solving capabilities
-// can improve for my future workplace endeavours.

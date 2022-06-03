@@ -24,6 +24,7 @@ const Experience = () => {
     width: "100%",
     paddingTop: "100%",
     position: "relative",
+    borderRadius: "10px",
   };
 
   const style = {

@@ -1,19 +1,18 @@
 import React from "react";
 import { Grid, Box } from "@mui/material";
 import ProjectText from "./ProjectText";
-import "./Projects.css";
 
-const Project = ({ link, image, github, bread, header, logos }) => {
+const Project = ({ link, image, github, bread, header, stack }) => {
   return (
     <Box>
       <Grid container item sx={{ marginTop: "50px" }}>
-        <Grid item p={2} xs={12} md={3} lg={4}>
+        <Grid item p={2} xs={12} md={4} lg={4}>
           <ProjectText
             link={link}
             github={github}
             bread={bread}
             header={header}
-            logos={logos}
+            stack={stack}
           />
         </Grid>
         <Grid
@@ -29,7 +28,7 @@ const Project = ({ link, image, github, bread, header, logos }) => {
           <img
             style={{
               width: "100%",
-              borderRadius: "25px",
+              borderRadius: "10px",
               filter: "grayscale(40%)",
             }}
             src={image}

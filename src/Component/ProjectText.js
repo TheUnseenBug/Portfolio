@@ -1,10 +1,15 @@
 import React from "react";
-import { Paper, Typography, Button, Stack } from "@mui/material";
+import { Paper, Typography, Button, Stack, Chip } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const ProjectText = ({ header, bread, link, github, logos }) => {
+const ProjectText = ({ header, bread, link, github, stack }) => {
+  const chipStyle = {
+    bgcolor: "primary.main",
+    margin: "0px 5px 10px 5px",
+    color: "#ffffff",
+  };
   return (
-    <Paper elevation="6" sx={{ borderRadius: "25px" }}>
+    <Paper elevation="6" sx={{ borderRadius: "20px" }}>
       <Typography
         p={2}
         variant="h4"
@@ -34,7 +39,6 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
       >
         {bread}
       </Typography>
-
       <Stack
         mt={2}
         mb={2}
@@ -60,18 +64,27 @@ const ProjectText = ({ header, bread, link, github, logos }) => {
           Github
         </Button>
       </Stack>
-      <Stack
-        direction="row"
-        spacing={2}
-        justifyContent="center"
-        alignItems="center"
-      >
-        {logos.map((logo, i) => (
-          <img src={logo} style={{ width: 30 }} key={i} alt="TechStack" />
-        ))}
-      </Stack>
+
+      {stack.map((item, index) => (
+        <Chip sx={chipStyle} label={item} key={index}></Chip>
+      ))}
     </Paper>
   );
 };
 
 export default ProjectText;
+
+{
+  /* <ul
+          style={{
+            display: "flex",
+            justifyContent: "flex-start",
+            padding: "0px",
+            listStyle: "none",
+          }}
+        >
+          {stack.map((item) => (
+            <li style={liStyle}>{item}</li>
+          ))}
+        </ul> */
+}

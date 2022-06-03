@@ -23,7 +23,7 @@ const Info = () => {
           "linear-gradient(19deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))",
         backdropFilter: "blur(10px)",
         webkitBackdropFilter: "blur(10px)",
-        borderRadius: "20px",
+        borderRadius: "10px",
         boxShadow: "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
       }}
     >

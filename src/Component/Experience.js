@@ -42,8 +42,8 @@ const Experience = () => {
         variant="h3"
         sx={{
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
+          justifyContent: "center",
           color: "text.primary",
         }}
       >

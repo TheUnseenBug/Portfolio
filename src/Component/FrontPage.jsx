@@ -32,14 +32,14 @@ function FrontPage() {
         bread="A webshop app where you can add products from a fake api to the cart and checkout via Klarna Checkout. Was created using React, MUI, Redux and my Klarna-Checkout"
         stack={["React", "Redux", "MUI"]}
       />
-      <Project
+      {/* <Project
         image={AiOnic}
         link="https://www.stripedpandastudios.com/"
         github="https://github.com/TheUnseenBug/Ai-Onic"
         header="Ai-Onic"
         bread="Developed a website for a indie game following instructions from the studio regarding design and features."
         stack={["React", "HTML", "CSS"]}
-      />
+      /> */}
     </Box>
   );
 }

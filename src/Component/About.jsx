@@ -43,8 +43,8 @@ function About() {
             }}
           >
             <Typography variant="h4">
-              I am a junior full-stack developer. My current stack is MongoDB,
-              React, Express, Node.
+              I am a junior full-stack developer. My current stack is
+              React/Next, MySQL, nest.js, React-Native
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -59,10 +59,12 @@ function About() {
                 since. I started building and tinkering with my pc and
                 eventually my fascination over programming grew more each year.
                 <div style={{ marginTop: "40px" }}>
-                  This year I finally took the big leap and decided to learn
-                  programming for real and enrolled in Techover-Academy which is
-                  a bootcamp that teaches the MERN stack. Now three months
-                  later, I am on the hunt for an adventure in the tech industry.
+                  After more then a year working full time as a
+                  fullstack-developer for Wellbefy, I am now ready to look for
+                  new opportunities. During my time at Wellbefy I have used
+                  loads of new fun tools such as native development using
+                  React-Native, developed a greater understand of Next.js,
+                  Nest.js for a typescript backend, MySQL for database.
                 </div>
               </Typography>
             </Box>

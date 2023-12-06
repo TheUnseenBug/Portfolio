@@ -64,7 +64,7 @@ function About() {
                   new opportunities. During my time at Wellbefy I have used
                   loads of new fun tools such as native development using
                   React-Native, developed a greater understand of Next.js,
-                  Nest.js for a typescript backend, MySQL for database.
+                  Nest.js for a typescript backend, postgresql for database.
                 </div>
               </Typography>
             </Box>

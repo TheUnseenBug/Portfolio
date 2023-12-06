@@ -77,9 +77,7 @@ const Info = () => {
         <Grid item>
           <Stack direction="row" spacing={1} alignItems="center">
             <Button
-              onClick={() =>
-                window.open("/Download/CV-Dennis-Granheimer.pdf", "_blank")
-              }
+              onClick={() => window.open("/Download/Resume-2023.pdf", "_blank")}
               variant="contained"
               mr={3}
               sx={{ bgcolor: "#40495F", color: "text.primary" }}

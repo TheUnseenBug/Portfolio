@@ -1,7 +1,6 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
-import Logo from "./Images/logo3.png";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
   let navigate = useNavigate();
@@ -9,32 +8,47 @@ function NavBar() {
   return (
     <Box
       sx={{
-        display: "flex",
+        display: { md: "flex", xs: "none" },
         justifyContent: "center",
+        top: 0,
+        left: 0,
+        right: 0,
+        position: "fixed",
         alignItems: "center",
         minWidth: "100%",
+        zIndex: 1,
       }}
     >
-      <AppBar
-        position="static"
-        sx={{ bottom: "0", bgcolor: "#edf7fc", borderRadius: "25px" }}
-      >
-        <Toolbar>
-          <Link to="/">
-            <img src={Logo} alt="logo"></img>
-          </Link>
-          <Typography sx={{ color: "text.secondary" }}>
-            Dennis Granheimer
-            <Button onClick={() => navigate("/About")} color="inherit">
-              About
-            </Button>
-            {/* <Button onClick={() => navigate("/Project")} color="inherit">
-              Projects
-            </Button> */}
-            <Button onClick={() => navigate("/Contact")} color="inherit">
-              Contact
-            </Button>
-          </Typography>
+      <AppBar position="static" sx={{ bottom: "0", bgcolor: "primary.main" }}>
+        <Toolbar
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "3rem",
+          }}
+        >
+          <Button
+            sx={{ color: "#ffffff" }}
+            onClick={() => navigate("/")}
+            color="inherit"
+          >
+            Home
+          </Button>
+          <Button
+            sx={{ color: "#ffffff" }}
+            onClick={() => navigate("/About")}
+            color="inherit"
+          >
+            About
+          </Button>
+          <Button
+            sx={{ color: "#ffffff" }}
+            onClick={() => navigate("/Contact")}
+            color="inherit"
+          >
+            Contact
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

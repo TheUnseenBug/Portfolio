@@ -18,10 +18,11 @@ import PhoneIcon from "@mui/icons-material/Phone";
 function Contact() {
   const email = "1dennis.granheimer@gmail.com";
   const phone = "0708780589";
+
   return (
     <Box
       sx={{
-        height: "calc(100vh - 77px)",
+        height: "calc(100vh - 64px)",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
@@ -36,7 +37,10 @@ function Contact() {
           />
         </Grid>
         <Grid item xs={12} md={6}>
-          <Typography variant="h1" sx={{ fontSize: { xs: 40, md: 60 } }}>
+          <Typography
+            variant="h1"
+            sx={{ fontSize: { xs: 40, md: 60 }, color: "text.primary" }}
+          >
             Looking forward to hearing from you!
           </Typography>
         </Grid>
@@ -45,6 +49,7 @@ function Contact() {
             <List subheader={<ListSubheader>Contact info:</ListSubheader>}>
               <ListItem>
                 <ListItemButton
+                  sx={{ color: "text.secondary" }}
                   onClick={() => (window.location.href = `tel:${phone}`)}
                 >
                   <ListItemIcon>
@@ -55,6 +60,7 @@ function Contact() {
               </ListItem>
               <ListItem>
                 <ListItemButton
+                  sx={{ color: "text.secondary" }}
                   onClick={() => (window.location.href = `mailto:${email}`)}
                 >
                   <ListItemIcon>

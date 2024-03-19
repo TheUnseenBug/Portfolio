@@ -30,7 +30,7 @@ function FrontPage() {
       />
       <Project
         image={webShop}
-        link="https://www.thewebshop.ml/"
+        link="https://webbshop.vercel.app/"
         github="https://github.com/TheUnseenBug/Webbshop"
         header="Webshop"
         bread="A webshop app where you can add products from a fake api to the cart and checkout via Klarna Checkout. Was created using React, MUI, Redux and my Klarna-Checkout"
